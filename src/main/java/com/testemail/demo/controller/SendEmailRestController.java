@@ -15,7 +15,7 @@ public class SendEmailRestController {
     @PostMapping("")
     public ResponseEntity<?> sendEmail(@RequestBody EmailObject emailObject ) throws Exception {
       if(emailObject.getEmail()!=null && emailObject.getEmail()!=null){
-         ;
+
           return new ResponseEntity<Object>( controllerFunction.sendEmail(emailObject), HttpStatus.OK);
       }
       return null;
